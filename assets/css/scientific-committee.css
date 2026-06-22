@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f7fb;
+    font-family:Arial,sans-serif;
+}
+
+
+/*================ HERO SECTION ================*/
+
+.scientific-hero{
+
+    position:relative;
+
+    height:280px;
+
+    overflow:hidden;
+}
+
+
+.hero-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(rgba(34,53,108,.80),
+                    rgba(34,53,108,.65));
+}
+
+
+.hero-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.hero-badge{
+
+    background:#22356c;
+
+    border:3px solid #f8770e;
+
+    padding:18px 60px;
+
+    border-radius:60px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+
+.hero-badge h1{
+
+    color:white;
+
+    margin:0;
+
+    font-size:50px;
+
+    font-weight:700;
+}
+
+
+
+
+/*================ BACK BUTTON ================*/
+
+.back-section{
+
+    padding:30px 0;
+}
+
+
+.back-btn{
+
+    background:#22356c;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 25px;
+
+    border-radius:40px;
+
+    display:inline-flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    transition:.3s;
+}
+
+
+.back-btn:hover{
+
+    background:#f8770e;
+
+    color:white;
+}
+
+
+
+
+/*================ MEMBERS SECTION ================*/
+
+.scientific-section{
+
+    padding:40px 0 90px;
+}
+
+
+.scientific-list{
+
+    max-width:800px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+}
+
+
+
+/* Ribbon Card */
+
+.scientific-card{
+
+    background:#22356c;
+
+    color:white;
+
+    min-height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    padding-left:95px;
+
+    border-radius:50px 0 0 50px;
+
+    transition:.3s;
+}
+
+
+
+/* Right Arrow */
+
+.scientific-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-30px;
+
+    border-top:40px solid transparent;
+
+    border-bottom:40px solid transparent;
+
+    border-left:30px solid #22356c;
+}
+
+
+
+/* Circle */
+
+.icon-circle{
+
+    width:70px;
+
+    height:70px;
+
+    background:white;
+
+    border-radius:50%;
+
+    border:3px solid #f8770e;
+
+    position:absolute;
+
+    left:-10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.icon-circle i{
+
+    color:#22356c;
+
+    font-size:24px;
+}
+
+
+.scientific-card h4{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:600;
+}
+
+
+.scientific-card:hover{
+
+    transform:translateX(10px);
+}
+
+
+
+
+/*================ TABLET ================*/
+
+@media(max-width:991px){
+
+.hero-badge h1{
+
+    font-size:38px;
+}
+
+
+.scientific-list{
+
+    max-width:650px;
+}
+
+}
+
+
+
+
+/*================ MOBILE ================*/
+
+@media(max-width:768px){
+
+.scientific-hero{
+
+    height:220px;
+}
+
+
+.hero-badge{
+
+    padding:15px 35px;
+}
+
+
+.hero-badge h1{
+
+    font-size:28px;
+}
+
+
+.scientific-card{
+
+    min-height:70px;
+
+    padding-left:75px;
+}
+
+
+.scientific-card::after{
+
+    right:-25px;
+
+    border-top:35px solid transparent;
+
+    border-bottom:35px solid transparent;
+
+    border-left:25px solid #0a66b7;
+}
+
+
+.icon-circle{
+
+    width:55px;
+
+    height:55px;
+}
+
+
+.icon-circle i{
+
+    font-size:18px;
+}
+
+
+.scientific-card h4{
+
+    font-size:17px;
+}
+
+}
