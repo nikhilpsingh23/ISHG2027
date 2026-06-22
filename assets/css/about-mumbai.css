@@ -18,7 +18,7 @@ HERO SECTION
 
 position:relative;
 
-height:92vh;
+height:85vh;
 
 overflow:hidden;
 }
@@ -26,7 +26,7 @@ overflow:hidden;
 
 .carousel-item img{
 
-height:92vh;
+height:85vh;
 
 object-fit:cover;
 }
