@@ -1,0 +1,183 @@
+.hero-section{
+    position:relative;
+    width:100%;
+    min-height:600px;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Background Video */
+.hero-video{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:0;
+}
+
+/* Overlay */
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.55)
+    );
+
+    z-index:1;
+}
+
+/* Content */
+
+.hero-content{
+    position:relative;
+    z-index:10;
+
+    text-align:center;
+
+    max-width:1000px;
+
+    color:white;
+}
+
+/* Heading */
+
+.hero-content h3{
+    font-size:40px;
+    margin-bottom:10px;
+}
+.hero-content h1{
+    font-size:70px;
+    color:#f8770e;
+    line-height:1.3;
+    margin-bottom:25px;
+    font-weight: 600;
+}
+
+/* Gray Box */
+
+.meeting-title{
+    display:inline-block;
+
+    background:rgba(255,255,255,.85);
+
+    color:#111;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.hero-content h4{
+    font-size:30px;
+
+    margin-bottom:30px;
+}
+
+/* Button */
+
+.register-btn{
+    display:inline-block;
+
+    padding:16px 40px;
+
+    background:#f8770e;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.register-btn:hover{
+    background:#f5a11b;
+}
+
+@media(max-width:991px){
+
+    .hero-section{
+        min-height:550px;
+    }
+
+    .hero-content h3{
+        font-size:28px;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .meeting-title{
+        font-size:20px;
+    }
+
+}
+
+
+@media(max-width:767px){
+
+    .hero-section{
+        min-height:500px;
+        padding:20px;
+    }
+
+    .hero-content h3{
+        font-size:25px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .meeting-title{
+        font-size:16px;
+        padding:10px 20px;
+    }
+
+    .hero-content h4{
+        font-size:16px;
+    }
+
+    /* Button */
+
+    .register-btn{
+        display:inline-block;
+
+        padding:16px 40px;
+
+    background:#f8770e;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+}
