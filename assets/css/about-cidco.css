@@ -1,0 +1,202 @@
+.gallery-section{
+    background:#f5f1e9;
+    padding:90px 0;
+    overflow:hidden;
+}
+
+.gallery-heading{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.top-badge{
+    background:#ffd591;
+    padding:12px 30px;
+    border-radius:40px;
+    display:inline-block;
+    font-weight:600;
+}
+
+.gallery-heading h2{
+    font-size:70px;
+    font-weight:800;
+    margin:30px 0;
+}
+
+.gallery-heading p{
+    font-size:22px;
+    max-width:650px;
+    margin:auto;
+    color:#555;
+}
+
+
+
+/* slider */
+
+.slider-wrapper{
+    margin-top:80px;
+    position:relative;
+}
+
+.gallery-slider{
+    display:flex;
+    align-items:flex-end;
+    gap:25px;
+
+    overflow-x:auto;
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+}
+
+.gallery-slider::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* cards */
+
+.gallery-card{
+    flex:none;
+    width:180px;
+    overflow:hidden;
+    border-radius:35px;
+    transition:.4s;
+}
+
+.gallery-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+/* SAME CURVE AS IMAGE */
+
+.card1{
+    height:330px;
+    transform:translateY(-20px);
+}
+
+.card2{
+    height:290px;
+    transform:translateY(10px);
+}
+
+.card3{
+    height:250px;
+    transform:translateY(40px);
+}
+
+.card4{
+    height:220px;
+    transform:translateY(60px);
+}
+
+.card5{
+    height:250px;
+    transform:translateY(40px);
+}
+
+.card6{
+    height:290px;
+    transform:translateY(10px);
+}
+
+.card7{
+    height:330px;
+    transform:translateY(-20px);
+}
+
+
+
+/* buttons */
+
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    z-index:5;
+}
+
+.prev-btn{
+    left:-20px;
+}
+
+.next-btn{
+    right:-20px;
+}
+
+@media(max-width:991px){
+
+.gallery-heading h2{
+    font-size:50px;
+}
+
+.gallery-card{
+    width:150px;
+}
+
+.card1,.card7{
+    height:280px;
+}
+
+.card2,.card6{
+    height:250px;
+}
+
+.card3,.card5{
+    height:220px;
+}
+
+.card4{
+    height:190px;
+}
+
+}
+
+@media(max-width:768px){
+
+.gallery-heading h2{
+    font-size:38px;
+}
+
+.gallery-heading p{
+    font-size:18px;
+}
+
+.gallery-card{
+    width:120px;
+    border-radius:25px;
+}
+
+.card1,.card7{
+    height:220px;
+}
+
+.card2,.card6{
+    height:190px;
+}
+
+.card3,.card5{
+    height:170px;
+}
+
+.card4{
+    height:150px;
+}
+
+.slider-btn{
+    width:45px;
+    height:45px;
+}
+
+}
