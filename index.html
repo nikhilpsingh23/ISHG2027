@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
 
 </head>
 
@@ -320,6 +321,234 @@
     </div>
 
 </section>
+
+
+<section class="about-nirbid">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <!-- Left Content -->
+
+            <div class="about-content">
+
+                <span class="section-tag">
+                    About ICMR-NIRBID
+                </span>
+
+                <h2>
+                    ICMR – National Institute for Research in
+                    Bacterial Infections and Diseases
+                </h2>
+
+                <p>
+                    The ICMR–NIRBID is a premier research institute under the
+                    Indian Council of Medical Research (ICMR), dedicated to
+                    advancing scientific knowledge in infectious diseases,
+                    genomics, molecular diagnostics, and public health research.
+                </p>
+
+                <p>
+                    Through cutting-edge research, innovation, and collaboration,
+                    the institute contributes significantly to disease surveillance,
+                    precision medicine, translational research, and capacity
+                    building for healthcare advancement in India.
+                </p>
+
+                <div class="nirbid-highlights">
+
+                    <div class="highlight-box">
+                        <h3>50+</h3>
+                        <span>Research Projects</span>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>100+</h3>
+                        <span>Scientists & Experts</span>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>ICMR</h3>
+                        <span>Premier Research Network</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Visual -->
+
+            <div class="about-visual">
+
+                <div class="visual-card">
+
+                    <div class="circle one"></div>
+                    <div class="circle two"></div>
+
+                    <img src="assets/images/Scientists_analyzing_DNA_sequences_202606241101.jpeg"
+                        alt="ICMR-NIRBID">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="faq-section">
+
+    <div class="faq-container">
+
+        <span class="faq-tag">FAQ</span>
+
+        <h2 class="faq-title">
+            Frequently Asked Questions
+        </h2>
+
+        <!-- FAQ Item -->
+
+        <div class="faq-item active">
+
+            <button class="faq-question">
+
+                <span class="icon">−</span>
+
+                <span>What is ISHG 2027 Conference?</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                ISHG 2027 is the 51st Annual Meeting of the Indian Society of Human Genetics,
+                bringing together researchers, clinicians, academicians and students in the
+                field of human genetics and precision medicine.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span class="icon">+</span>
+
+                <span>Who can participate in the conference?</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                Researchers, clinicians, geneticists, students, academicians and industry
+                professionals are welcome to participate.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span class="icon">+</span>
+
+                <span>Where is the conference venue?</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                The conference will be held at CIDCO Convention Centre,
+                Navi Mumbai, Maharashtra.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span class="icon">+</span>
+
+                <span>How can I register?</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                You can register through the official conference registration portal
+                available on the website.
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span class="icon">+</span>
+
+                <span>Will certificates be provided?</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                Yes. Participation certificates will be provided to all registered attendees.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+
+    const question = item.querySelector('.faq-question');
+
+    question.addEventListener('click', () => {
+
+        faqItems.forEach(faq => {
+
+            if(faq !== item){
+
+                faq.classList.remove('active');
+
+                faq.querySelector('.icon').textContent = '+';
+
+            }
+
+        });
+
+        item.classList.toggle('active');
+
+        const icon = item.querySelector('.icon');
+
+        icon.textContent = item.classList.contains('active') ? '−' : '+';
+
+    });
+
+});
+
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
