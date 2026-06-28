@@ -130,7 +130,7 @@
 
     color:#22356c;
 
-    font-size:72px;
+    font-size:65px;
 
     line-height:1.1;
 
@@ -343,5 +343,585 @@
 
         display:none;
     }
+
+}
+
+
+/*=========================
+AWARDS SECTION
+=========================*/
+
+.awards-section{
+
+    padding:50px 0;
+
+    background:#f8f8fb;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* Background Pattern */
+
+.awards-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    top:-80px;
+    right:-80px;
+
+    border-radius:50%;
+
+    background:rgba(31,86,168,.05);
+}
+
+.awards-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    left:-80px;
+    bottom:-80px;
+
+    border-radius:50%;
+
+    background:rgba(248,119,14,.05);
+}
+
+
+/* Heading */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.section-title span{
+
+    display:inline-block;
+
+    color:#f8770e;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:10px;
+}
+
+.section-title h2{
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:#22356c;
+}
+
+
+/* Grid */
+
+.awards-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:50px;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+/* Card */
+
+.award-card{
+
+    position:relative;
+
+    min-height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:20px 30px 20px 95px;
+
+    color:#fff;
+
+    background:linear-gradient(90deg,#1f56a8,#14468d);
+
+    border-radius:55px 0 0 55px;
+
+    transition:.35s;
+
+    overflow:visible;
+}
+
+/* Ribbon */
+
+.award-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-32px;
+
+    border-top:45px solid transparent;
+
+    border-bottom:45px solid transparent;
+
+    border-left:32px solid #14468d;
+}
+
+
+/* Icon */
+
+.award-icon{
+
+    position:absolute;
+
+    left:-12px;
+
+    width:78px;
+
+    height:78px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:4px solid #f8770e;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+}
+
+.award-icon i{
+
+    font-size:28px;
+
+    color:#f8770e;
+}
+
+
+/* Text */
+
+.award-card h4{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:600;
+}
+
+
+/* Hover */
+
+.award-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.18);
+}
+
+.award-card:hover .award-icon{
+
+    transform:rotate(10deg) scale(1.08);
+}
+
+
+/* Last Card */
+
+.full-width{
+
+    grid-column:1/-1;
+
+    max-width:520px;
+
+    justify-self:center;
+}
+
+
+/*=====================
+TABLET
+=====================*/
+
+@media(max-width:991px){
+
+.section-title h2{
+
+    font-size:36px;
+}
+
+.awards-grid{
+
+    gap:25px;
+}
+
+.award-card{
+
+    padding-left:85px;
+}
+
+.award-card h4{
+
+    font-size:20px;
+}
+
+}
+
+
+/*=====================
+MOBILE
+=====================*/
+
+@media(max-width:768px){
+
+.awards-section{
+
+    padding:70px 0;
+}
+
+.section-title h2{
+
+    font-size:28px;
+}
+
+.awards-grid{
+
+    grid-template-columns:1fr;
+}
+
+.full-width{
+
+    grid-column:auto;
+
+    max-width:100%;
+}
+
+.award-card{
+
+    min-height:80px;
+
+    padding:18px 20px 18px 75px;
+}
+
+.award-card::after{
+
+    right:-25px;
+
+    border-top:40px solid transparent;
+
+    border-bottom:40px solid transparent;
+
+    border-left:25px solid #14468d;
+}
+
+.award-icon{
+
+    width:60px;
+
+    height:60px;
+
+    left:-8px;
+}
+
+.award-icon i{
+
+    font-size:22px;
+}
+
+.award-card h4{
+
+    font-size:17px;
+
+    line-height:1.4;
+}
+
+}
+
+
+/*==============================
+ Conference Information
+===============================*/
+
+.conference-info{
+
+    padding:90px 0;
+
+    background:#f8f8fb;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.conference-info::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:rgba(31,86,168,.05);
+
+    border-radius:50%;
+
+    top:-150px;
+    left:-120px;
+}
+
+.conference-info::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    background:rgba(248,119,14,.06);
+
+    border-radius:50%;
+
+    right:-120px;
+    bottom:-120px;
+}
+
+
+/* Heading */
+
+.section-heading{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:auto auto 60px;
+}
+
+.section-tag{
+
+        display: inline-block;
+    color: #f8770e;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-heading h2{
+
+    font-size:46px;
+
+    color:#22356c;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+}
+
+.section-heading p{
+
+    color:#666;
+
+    line-height:1.8;
+}
+
+
+/* Cards */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+}
+
+.info-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(31,86,168,.18);
+}
+
+.icon{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    background:#1f56a8;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    flex-shrink:0;
+}
+
+.highlight-card .icon{
+
+    background:#f8770e;
+}
+
+.content span{
+
+    display:block;
+
+    color:#1f56a8;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+}
+
+.content h3{
+
+    color:#22356c;
+
+    font-size:24px;
+
+    margin:0;
+}
+
+.content p{
+
+    margin-top:6px;
+
+    color:#777;
+
+    font-size:15px;
+}
+
+
+/*====================
+ Tablet
+=====================*/
+
+@media(max-width:992px){
+
+.info-grid{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+.section-heading h2{
+
+    font-size:36px;
+}
+
+}
+
+
+/*====================
+ Mobile
+=====================*/
+
+@media(max-width:768px){
+
+.conference-info{
+
+    padding:70px 0;
+}
+
+.section-heading{
+
+    margin-bottom:40px;
+}
+
+.section-heading h2{
+
+    font-size:28px;
+}
+
+.info-grid{
+
+    grid-template-columns:1fr;
+}
+
+.info-card{
+
+    padding:22px;
+
+    gap:15px;
+}
+
+.icon{
+
+    width:60px;
+    height:60px;
+
+    font-size:22px;
+}
+
+.content h3{
+
+    font-size:20px;
+}
 
 }
