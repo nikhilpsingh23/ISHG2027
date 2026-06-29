@@ -1,0 +1,452 @@
+/*==========================
+ Registration Hero
+==========================*/
+
+.registration-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+
+    padding:50px 0;
+}
+
+/* Floating Background */
+
+.hero-shape{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(30px);
+
+    animation:floatShape 8s ease-in-out infinite;
+}
+
+.shape1{
+
+    width:260px;
+    height:260px;
+
+    background:rgba(31,86,168,.12);
+
+    top:-70px;
+    left:-60px;
+}
+
+.shape2{
+
+    width:180px;
+    height:180px;
+
+    background:rgba(248,119,14,.12);
+
+    right:12%;
+
+    top:80px;
+
+    animation-delay:2s;
+}
+
+.shape3{
+
+    width:220px;
+    height:220px;
+
+    background:rgba(31,86,168,.08);
+
+    right:-80px;
+
+    bottom:-70px;
+
+    animation-delay:4s;
+}
+
+
+/* Layout */
+
+.registration-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+}
+
+
+/* Left */
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:#e9f2ff;
+
+    color:#1f56a8;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.registration-content h1{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    color:#22356c;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+}
+
+.registration-content h1 span{
+
+    color:#f8770e;
+}
+
+.registration-content p{
+
+    color:#555;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+    max-width:600px;
+}
+
+
+/* Info */
+
+.hero-info{
+
+    display:flex;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+}
+
+.hero-info div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#22356c;
+
+    font-weight:600;
+}
+
+.hero-info i{
+
+    color:#f8770e;
+
+    font-size:20px;
+}
+
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.register-btn{
+
+    background:#f8770e;
+
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(248,119,14,.35);
+}
+
+.register-btn:hover{
+
+    transform:translateY(-5px);
+
+    color:white;
+}
+
+.download-btn{
+
+    border:2px solid #1f56a8;
+
+    color:#1f56a8;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+.download-btn:hover{
+
+    background:#1f56a8;
+
+    color:#fff;
+}
+
+
+/* Right */
+
+.hero-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    animation:floatImage 5s ease-in-out infinite;
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:580px;
+}
+
+/* Floating Cards */
+
+.floating-card{
+
+    position:absolute;
+
+    background:white;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    animation:cardFloat 3s ease-in-out infinite;
+}
+
+.floating-card i{
+
+    font-size:22px;
+
+    color:#f8770e;
+
+    margin-bottom:10px;
+}
+
+.floating-card h5{
+
+    margin:0;
+
+    color:#22356c;
+}
+
+.card-one{
+
+    top:40px;
+
+    left:0;
+}
+
+.card-two{
+
+    bottom:50px;
+
+    right:10px;
+
+    animation-delay:1.5s;
+}
+
+
+/* Animation */
+
+@keyframes floatImage{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+}
+
+@keyframes cardFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+@keyframes floatShape{
+
+0%,100%{
+
+transform:translateY(0) scale(1);
+
+}
+
+50%{
+
+transform:translateY(-25px) scale(1.05);
+
+}
+
+}
+
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.registration-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.registration-content p{
+
+margin:auto auto 30px;
+
+}
+
+.hero-info{
+
+justify-content:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+.registration-content h1{
+
+font-size:46px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.registration-hero{
+
+padding:50px 0;
+
+}
+
+.registration-content h1{
+
+font-size:34px;
+
+}
+
+.registration-content p{
+
+font-size:16px;
+
+}
+
+.hero-info{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.hero-image img{
+
+max-width:330px;
+
+}
+
+.floating-card{
+
+padding:14px 18px;
+
+}
+
+.card-one{
+
+left:10px;
+
+}
+
+.card-two{
+
+right:10px;
+
+bottom:20px;
+
+}
+
+}
